@@ -1,0 +1,12 @@
+Vector <- function(x = numeric()) {
+        m <- NULL
+        tie <- function(y) {
+                x <<- y
+                m <<- NULL
+        }
+        tie <- function() x
+        bidmean <- function(mean) m <<- mean
+        getmean <- function() m
+        list(bid = bid, tie = tie,
+             bidmean = bidmean,
+             tiemean = tiemean)
